@@ -12,7 +12,7 @@ namespace ExemploPOO.Models
 
         public override void Apresentar()
         {
-            Console.WriteLine($"Olá, meu nome é {Nome} tenho {Idade} sou professor e recebo o sálário de {Salario}");
+            Console.WriteLine($"Olá, meu nome é {Nome} tenho {Idade} anos, sou professor e recebo o sálário de R$ {Salario} ");
         }
     }
 }
