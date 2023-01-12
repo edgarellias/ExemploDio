@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace ExemploPOO.Models
 {
-    internal class Aluno
+    public class Aluno : Pessoa
     {
+        public double Nota { get; set; }
+
+        public override void Apresentar()
+        {
+            Console.WriteLine($"Olá, meu nome é {Nome} tenho {Idade} e sou aluno nota {Nota}");
+        }
+
     }
 }

@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace ExemploPOO.Models
 {
-    internal class Professor
+    public class Professor : Pessoa
     {
+        public decimal Salario { get; set; }
+
+        public override void Apresentar()
+        {
+            Console.WriteLine($"Olá, meu nome é {Nome} tenho {Idade} sou professor e recebo o sálário de {Salario}");
+        }
     }
 }
